@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import profileImg from "@/assets/profile.jpg";
+import profileImg from "@/assets/chandu.png";
 
 const About = () => {
   const ref = useRef(null);
@@ -32,7 +32,7 @@ const About = () => {
               <img
                 src={profileImg}
                 alt="Aripaka Chandra Sekhar"
-                className="relative rounded-full w-64 h-64 mx-auto object-cover border-4 border-card"
+                className="relative rounded-full w-60 h-64 mx-auto object-cover border-4 border-card"
               />
             </motion.div>
 
@@ -48,6 +48,18 @@ const About = () => {
               <p className="text-lg text-muted-foreground leading-relaxed">
                 With a curious mind and collaborative spirit, I constantly seek to push the boundaries of what's possible with modern technology.
               </p>
+              <div className="pt-4">
+                <h3 className="text-xl font-semibold text-primary mb-2">Resume</h3>
+                <a
+                  href="https://hackerresume-prod.s3.us-east-1.amazonaws.com/resumes/sekhararipaka456/eec81420-197a-481a-b76c-ea96856533ea.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-secondary hover:underline"
+                >
+                  View My Resume
+                </a>
+              </div>
+
               <div className="pt-4">
                 <h3 className="text-xl font-semibold text-primary mb-2">Location</h3>
                 <p className="text-muted-foreground">Visakhapatnam, India</p>

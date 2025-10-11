@@ -26,6 +26,7 @@ const Contact = () => {
     setFormData({ name: "", email: "", message: "" });
   };
 
+  
   const socialLinks = [
     {
       name: "LinkedIn",
@@ -36,13 +37,13 @@ const Contact = () => {
     {
       name: "GitHub",
       icon: Github,
-      href: "https://github.com/AripakaChandraSekhar",
+      href: "https://github.com/SekharChandra21",
       color: "hover:text-accent",
     },
     {
       name: "Twitter",
       icon: Twitter,
-      href: "https://twitter.com/@sekhar_codes",
+      href: "https://x.com/cs_bujjigadu",
       color: "hover:text-secondary",
     },
   ];
@@ -77,7 +78,7 @@ const Contact = () => {
                 <div className="space-y-4">
                   <div className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors">
                     <Mail className="w-5 h-5" />
-                    <a href="mailto:contact@sekhar.dev">contact@sekhar.dev</a>
+                    <a href="mailto:contact@sekhar.dev">sekhararipaka456@gmail.com</a>
                   </div>
                   
                   <div className="flex items-center gap-4 text-muted-foreground">

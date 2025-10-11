@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import { Button } from "./ui/button";
+import { TypeAnimation } from "react-type-animation"; // 👈 added
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
@@ -26,6 +27,7 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="text-center max-w-4xl mx-auto"
         >
+          {/* Name */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -35,15 +37,27 @@ const Hero = () => {
             <span className="text-gradient">Aripaka Chandra Sekhar</span>
           </motion.h1>
 
-          <motion.p
+          {/* Typing Animation for Taglines */}
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
             className="text-xl md:text-2xl text-muted-foreground mb-4"
           >
-            Full Stack Developer | DevOps | AI Enthusiast
-          </motion.p>
+            <TypeAnimation
+              sequence={[
+                "Full Stack Developer", 2000,
+                "DevOps Learner", 2000,
+                "AI Enthusiast", 2000,
+              ]}
+              speed={10}
+              repeat={Infinity}
+              wrapper="span"
+              className="inline-block"
+            />
+          </motion.div>
 
+          {/* Subtext */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -53,6 +67,7 @@ const Hero = () => {
             Turning ideas into scalable, intelligent systems.
           </motion.p>
 
+          {/* Button */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -61,7 +76,11 @@ const Hero = () => {
             <Button
               size="lg"
               className="gradient-primary hover:opacity-90 transition-opacity text-primary-foreground font-semibold"
-              onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
+              onClick={() =>
+                document
+                  .getElementById("projects")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
             >
               View My Work
             </Button>

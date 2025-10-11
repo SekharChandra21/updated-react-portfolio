@@ -16,6 +16,12 @@ const Projects = () => {
       color: "from-primary to-accent",
     },
     {
+      title: "Real-Time Chat Application using Sockets",
+      description: "Developed a responsive web chat platform enabling instant messaging with real-time updates using WebSockets. Integrated user authentication, online status indicators, and smooth UI interactions for a seamless communication experience.",
+      tech: ["React", "Express.js", "Node.js", "MongoDB","Socket.io","DaisyUI"],
+      color: "from-accent to-secondary",
+    },
+    {
       title: "VirtualTries – Smart Fashion Cart",
       description: "Interactive smart shopping cart that recommends outfits using body measurement scanning and AR try-ons.",
       tech: ["Next.js", "Tailwind CSS", "AR API"],
@@ -31,13 +37,13 @@ const Projects = () => {
       title: "Smart Door Lock System",
       description: "IoT-powered door locking system with facial recognition and mobile alerts.",
       tech: ["Raspberry Pi", "Python", "C (Arduino)"],
-      color: "from-primary to-secondary",
+      color: "from-secondary to-accent",
     },
     {
       title: "To-Do List & Money Manager Apps",
       description: "Simple, productive, and visually clean personal management tools.",
-      tech: ["React"],
-      color: "from-accent to-primary",
+      tech: ["React","Express.js","Node.js","SQLite"],
+      color: "from-accent to-secondary",
     },
   ];
 

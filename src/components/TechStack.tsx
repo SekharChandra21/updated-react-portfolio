@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Code2, Server, Database, Brain, Container, Wrench } from "lucide-react";
+import {CodeSquare, Code2, Server, Database, Brain, Container, Wrench } from "lucide-react";
 
 const TechStack = () => {
   const ref = useRef(null);
@@ -9,21 +9,27 @@ const TechStack = () => {
 
   const techCategories = [
     {
+      title: "Programming Languages",
+      icon: CodeSquare,
+      techs: ["Java", "JavaScript", "Python", "C", "C++","Go"],
+      color: "from-primary to-accent",
+    },
+    {
       title: "Frontend",
       icon: Code2,
-      techs: ["React", "Next.js", "Tailwind CSS"],
+      techs: ["React", "Angular", "Bootstrap", "Next.js", "Tailwind CSS"],
       color: "from-primary to-accent",
     },
     {
       title: "Backend",
       icon: Server,
-      techs: ["Node.js", "Spring Boot"],
+      techs: ["Express.js", "Node.js", "Spring Boot"],
       color: "from-accent to-secondary",
     },
     {
       title: "Database",
       icon: Database,
-      techs: ["MySQL"],
+      techs: ["MongoDB","SQLite", "MySQL"],
       color: "from-secondary to-primary",
     },
     {
@@ -35,7 +41,7 @@ const TechStack = () => {
     {
       title: "DevOps",
       icon: Container,
-      techs: ["Docker", "Jenkins", "Kubernetes"],
+      techs: ["Docker", "Jenkins", "Kubernetes", "Spinnaker"],
       color: "from-accent to-primary",
     },
     {
