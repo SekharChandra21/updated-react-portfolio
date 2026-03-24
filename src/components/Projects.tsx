@@ -10,40 +10,52 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "AI-Powered Disease Diagnosis System",
-      description: "AI-driven diagnosis and appointment portal for disease prediction and doctor consultation.",
-      tech: ["React", "Spring Boot", "MySQL", "Machine Learning"],
-      color: "from-primary to-accent",
-    },
-    {
       title: "Real-Time Chat Application using Sockets",
       description: "Developed a responsive web chat platform enabling instant messaging with real-time updates using WebSockets. Integrated user authentication, online status indicators, and smooth UI interactions for a seamless communication experience.",
       tech: ["React", "Express.js", "Node.js", "MongoDB","Socket.io","DaisyUI"],
       color: "from-accent to-secondary",
+      githubLink: "https://github.com/SekharChandra21/chat_app",
+      demoLink: "https://chandrasekharweb.vercel.app/",
+    },
+    {
+      title: "AI-Powered Disease Diagnosis System",
+      description: "AI-driven diagnosis and appointment portal for disease prediction and doctor consultation.",
+      tech: ["React", "Spring Boot", "MySQL", "Machine Learning"],
+      color: "from-primary to-accent",
+      githubLink: "https://github.com/SekharChandra21/Backend_HMS_Spring_Boot",
+      demoLink: "",
     },
     {
       title: "VirtualTries – Smart Fashion Cart",
       description: "Interactive smart shopping cart that recommends outfits using body measurement scanning and AR try-ons.",
       tech: ["Next.js", "Tailwind CSS", "AR API"],
       color: "from-accent to-secondary",
+      githubLink:  "",
+      demoLink: "",
     },
     {
       title: "Lung Cancer Detection using Deep Learning",
       description: "Deep learning-based medical image classification model to detect lung cancer stages.",
       tech: ["Python", "TensorFlow", "VGG16", "ResNet50"],
       color: "from-secondary to-primary",
+      githubLink: "",
+      demoLink: "",
     },
     {
       title: "Smart Door Lock System",
       description: "IoT-powered door locking system with facial recognition and mobile alerts.",
       tech: ["Raspberry Pi", "Python", "C (Arduino)"],
       color: "from-secondary to-accent",
+      githubLink: "",
+      demoLink: "",
     },
     {
       title: "To-Do List & Money Manager Apps",
       description: "Simple, productive, and visually clean personal management tools.",
       tech: ["React","Express.js","Node.js","SQLite"],
       color: "from-accent to-secondary",
+      githubLink: "",
+      demoLink: "",
     },
   ];
 
@@ -113,22 +125,26 @@ const Projects = () => {
                 </div>
                 
                 <div className="flex gap-3">
-                  <Button
-                    size="sm"
-                    variant="outline"
-                    className="gap-2"
-                  >
-                    <Github size={16} />
-                    Code
-                  </Button>
-                  <Button
-                    size="sm"
-                    variant="outline"
-                    className="gap-2"
-                  >
-                    <ExternalLink size={16} />
-                    Demo
-                  </Button>
+                  <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      className="gap-2"
+                    >
+                      <Github size={16} />
+                      Code
+                    </Button>
+                  </a>
+                  <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      className="gap-2"
+                    >
+                      <ExternalLink size={16} />
+                      Demo
+                    </Button>
+                  </a>
                 </div>
               </motion.div>
             ))}
