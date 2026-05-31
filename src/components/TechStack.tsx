@@ -23,31 +23,31 @@ const TechStack = () => {
     {
       title: "Backend",
       icon: Server,
-      techs: ["Express.js", "Node.js", "Spring Boot"],
+      techs: ["Express.js", "Node.js", "Spring Boot", "Go Lang"],
       color: "from-accent to-secondary",
     },
     {
       title: "Database",
       icon: Database,
-      techs: ["MongoDB","SQLite", "MySQL"],
+      techs: ["MongoDB","SQLite", "MySQL", "PostgreSQL", "Supabase"],
       color: "from-secondary to-primary",
     },
     {
       title: "AI/ML",
       icon: Brain,
-      techs: ["Python", "TensorFlow", "Machine Learning"],
+      techs: ["Python", "TensorFlow", "Machine Learning", "Langchain", "Langgraph", "Hugginface", "OpenAI", "n8n workflow", "Pinecone", "LlamaIndex", "ChromaDB", "RAG"],
       color: "from-primary to-secondary",
     },
     {
       title: "DevOps",
       icon: Container,
-      techs: ["Docker", "Jenkins", "Kubernetes", "Spinnaker"],
+      techs: ["Docker", "Jenkins", "Kubernetes", "Spinnaker", "SonarQube", "GitHub Actions", "AWS", "S3", "Vercel", "Railway", "Render"],
       color: "from-accent to-primary",
     },
     {
       title: "Tools",
       icon: Wrench,
-      techs: ["Git", "VS Code", "Postman", "Figma"],
+      techs: ["Git", "VS Code", "Postman", "SQL Workbench", "Jira", "Figma","Rabbit MQ", "Swagger"],
       color: "from-secondary to-accent",
     },
   ];

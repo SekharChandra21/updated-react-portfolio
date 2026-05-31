@@ -43,15 +43,15 @@ const About = () => {
               className="space-y-4"
             >
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm a passionate technologist who loves blending innovation with practicality. I thrive in crafting full-stack applications, building scalable systems, and experimenting with AI-driven solutions.
+                Full-stack developer with hands-on experience building real-time web applications, backend services, and automation tools using the MERN stack, Python, and cloud-based deployment workflows. I'm enthusiastic about leveraging cutting-edge technology to solve complex problems and deliver scalable solutions.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                With a curious mind and collaborative spirit, I constantly seek to push the boundaries of what's possible with modern technology.
+                My expertise spans real-time chat systems, API-driven integrations, comprehensive testing, and CI/CD practices, with exposure to AI/ML-related development. I'm proficient in React, Node.js, Express, MongoDB, Socket.io, JavaScript, Python, and thrive in cross-functional delivery within Agile environments. Passionate about continuous learning and pushing the boundaries of what's possible with modern technology.
               </p>
               <div className="pt-4">
                 <h3 className="text-xl font-semibold text-primary mb-2">Resume</h3>
                 <a
-                  href="https://hackerresume-prod.s3.us-east-1.amazonaws.com/resumes/sekhararipaka456/eec81420-197a-481a-b76c-ea96856533ea.pdf"
+                  href="https://drive.google.com/file/d/1JOe1ezuTgbT2ceq2nrEc4xflOYFJ2esI/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-secondary hover:underline"

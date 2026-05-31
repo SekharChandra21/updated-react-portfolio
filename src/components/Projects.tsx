@@ -10,6 +10,14 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "Query Sphere AI",
+      description: "AI-powered conversational document intelligence platform enabling users to upload multi-format documents (PDF, CSV, XLSX) and interact with data using natural language queries. Features contextual summaries, semantic answers, dynamic visualizations, RAG architecture, secure multi-user authentication, and persistent chat sessions.",
+      tech: ["React", "Express.js", "MongoDB", "Supabase", "Groq LLaMA 3.1", "Hugging Face", "n8n", "Material UI", "Recharts", "JWT", "RAG"],
+      color: "from-primary to-accent",
+      githubLink: "https://github.com/SekharChandra21/updated-react-portfolio",
+      demoLink: "https://query-rag-intellegence-system.vercel.app/",
+    },
+    {
       title: "Real-Time Chat Application using Sockets",
       description: "Developed a responsive web chat platform enabling instant messaging with real-time updates using WebSockets. Integrated user authentication, online status indicators, and smooth UI interactions for a seamless communication experience.",
       tech: ["React", "Express.js", "Node.js", "MongoDB","Socket.io","DaisyUI"],
